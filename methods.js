@@ -12,5 +12,6 @@ console.log(resultOne);
 
 // when we invoke a method, we invoke it using dot notation We can store that in a variable too and then log it to the console with the new variable name:
 
-let resultTwo = person.toUpperCase();
-console.log(resultTwo);
+// let resultTwo = person.toUpperCase();
+// console.log(resultTwo);
+
