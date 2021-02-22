@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Forms in JS</title>
-    <style>
-        body{
-            background: #eee;
-        }
-        form{
-            max-width: 200px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 10px;;
-        }
-        input{
-            display: block;
-            margin: 10px auto;
-            padding: 4px;
-            border: 1px solid;
-        }
-        .success{
-            border: 3px solid limegreen;
-        }
-        .error{
-            border: 3px solid crimson;
-        }
-    </style>
-</head>
-<body>
-    <form class="signup-form">
-        <input type="text" id="username" placeholder="username">
-        <input type="submit" value="submit">
-        <div class="feedback"></div>
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 
-    <!-- <script src="forms.js"></script> -->
-    <script src="validation.js"></script>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="app.js" defer></script>
+    <title>Net Ninja Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            type="text"
+            class="form-control m-auto"
+            name="search"
+            placeholder="search todos"
+          />
+        </form>
+      </header>
+      <ul class="list-group todos mx-auto text-light">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>play mariocart 8</span>
+          <!-- i = fontawesome classes represent icons -->
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>defeat ganon in zelda</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>make a veggie pie</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+      <form class="add text-center my-4">
+        <label class="text-light">Add a new todo....</label>
+        <input type="text" class="form-control m-auto" name="add" />
+      </form>
+    </div>
+  </body>
 </html>
