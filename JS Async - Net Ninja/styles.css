@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ccc;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    padding: 4rem;
+}
+h2{
+    color: #fff;
+    text-align: center;
+}
